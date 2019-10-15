@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dor</title>
+
+    <script>
+        /*
+                                                for (var i = 1; i <= 3; i++) {
+                                                    document.write("<strong>" + "这是第一层循环的第" + i + "次" + "</strong>" + "<br>")
+                                                    for (var j = 1; j <= 4; j++) {
+                                                        document.write("<strong>" + "这是第二层循环:" + "</strong>")
+
+                                                        document.write("<strong>" + "这是第二层循环的第" + j + "次;" + "</strong>")
+                                                    }
+                                                    document.write("<br>")
+                                                } 
+
+
+                                                var arr = [10， 20， 5， 6， 30， 50] 从小到大 函数 冒泡 选择 快速
+                                                1000 以内的斐波那契数列
+                                                鸡兔同笼： 35 个头， 94 个腿
+                                                while循环， 用户名张三， 密码123456； 输对了登录成功， 最多输入3次， 提示最多输入三次
+
+                                                鸡兔同笼
+                                                for(var i=1;i<=35;i++){
+                                                    for(var j= 1;j<=35;j++){
+                                                        if(i+j==35&&(2*i+4*j)==94){
+                                                            document.write("兔子有"+j+"只,鸡有"+i+"只");
+                                                        }
+                                                    }
+                                                }
+
+                                                账号密码
+                                                var a = 3;
+                                                while (a > 0) {
+                                                    var user = prompt("请输入用户名:")
+                                                    var password = prompt("请输入密码:")
+                                                    if (user === "张三" && password === "123456") {
+                                                        alert("登录成功");
+                                                        break;
+                                                    }
+                                                    a--;
+                                                    if (a != 0) {
+                                                        alert("您还有" + a + "次机会");
+                                                    }else{
+                                                        alert("您没有机会了");
+                                                    }
+                                                }
+                                                */
+
+        var arr = [10, 20, 5, 6, 30, 50]
+            /*快速*/
+        function kuaisu(arr, start, end) {
+            var left = start
+            var right = end
+            var temp = arr[left]
+            if (left > right) {
+                return
+            }
+            while (left < right) {
+                while (left < right && arr[right] >= temp) {
+                    right--;
+                }
+                arr[left] = arr[right]
+                while (left < right && arr[left] <= temp) {
+                    left++;
+                }
+                arr[right] = arr[left]
+            }
+            arr[left] = temp
+            kuaisu(arr, start, left - 1)
+            kuaisu(arr, left + 1, end)
+
+        }
+        kuaisu(arr, 0, arr.length - 1)
+        console.log(arr)
+
+        /*冒泡排序*/
+
+        // function maopao(arr) {
+        //     for (var i = 0; i < arr.length - 1; i++) {
+        //         for (var j = 0; j < arr.length - 1 - i; j++) {
+        //             if (arr[j] > arr[j + 1]) {
+        //                 var temp = arr[j];
+        //                 arr[j] = arr[j + 1];
+        //                 arr[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     return arr
+        // }
+        /*选择排序*/
+        // function xuanze(arr) {
+        //     for (var i = 0; i < arr.length - 1; i++) {
+        //         min = i
+        //         for (var j = i + 1; j < arr.length; j++) {
+        //             if (arr[j] < arr[min]) {
+        //                 min = j;
+        //             }
+        //         }
+        //         var temp = arr[i]
+        //         arr[i] = arr[min]
+        //         arr[min] = temp
+        //     }
+        //     return arr
+        // }
+
+
+
+
+
+
+        // function fenbona(num) {
+        //     var arr = [1, 1]
+        //     var num1 = 1,
+        //         num2 = 1
+
+        //     for (sum = 2;; sum = num1 + num2) {
+        //         num1 = num2;
+        //         num2 = sum;
+        //         arr.push(sum)
+
+        //         if ((arr.length + 1) > num) {
+        //             break;
+        //         }
+
+        //     }
+        //     console.log(arr)
+        // }
+        // fenbona(10)
+    </script>
+
+    <style>
+        .zong {
+            width: 100%;
+            height: 400px;
+            border: 1px solid tomato;
+            overflow: hidden;
+        }
+        
+        .top {
+            height: 100%;
+            float: left;
+        }
+        
+        .top>div {
+            width: 100%;
+            height: 25%;
+        }
+        
+        .right {
+            height: 400px;
+            float: left;
+        }
+        
+        .right>div {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="zong">
+        <div class="top col-lg-4 col-sm-12">
+            <div style="background: black ;">1</div>
+            <div style="background: red">2</div>
+            <div style="background: pink">3</div>
+            <div style="background: orange">4</div>
+        </div>
+        <div class="right col-lg-8 hidden-sm">
+            <div style="background: black ;"></div>
+            <div style="background: red"></div>
+            <div style="background: pink"></div>
+            <div style="background: orange"></div>
+        </div>
+        <div class="right">
+            <div style="background: red"></div>
+            <div style="background: black ;"></div>
+            <div style="background: pink"></div>
+            <div style="background: orange"></div>
+        </div>
+        <div class="right">
+            <div style="background: pink"></div>
+            <div style="background: red"></div>
+            <div style="background: black ;"></div>
+            <div style="background: orange"></div>
+        </div>
+        <div class="right">
+            <div style="background: orange"></div>
+            <div style="background: pink"></div>
+            <div style="background: red"></div>
+            <div style="background: black ;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // var top1 = document.querySelectorAll('.top>div')
+    // var cont = document.querySelectorAll(".right")
+
+
+    // for (let i = 0; i < top1.length; i++) {
+    //     top1[i].onclick = function() {
+
+    //         for (var k = 0; k < top1.length; k++) {
+    //             cont[k].style.display = "none";
+    //         }
+    //         cont[i].style.display = "block";
+    //     }
+
+    // }
+    var list = document.querySelectorAll(".top>div")
+
+    var con = document.querySelectorAll(".right")
+    for (let i = 0; i < list.length; i++) {
+        list[i].onmouseover = function() {
+            con[i].style.display = "block"
+        }
+        list[i].onmouseout = function() {
+            con[i].style.display = "none"
+        }
+
+    }
+</script>

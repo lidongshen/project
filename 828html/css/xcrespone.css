@@ -1,0 +1,49 @@
+.container1 {
+    width: 100%;
+}
+
+.div-s-4 {
+    width: 20%;
+}
+
+.div-s-5 {
+    width: 23.7%;
+}
+.div-s-15{
+    width:75%;
+}
+.div-s-16 {
+    width: 80%;
+}
+
+.div-s-20 {
+    width: 100%;
+}
+
+.div-s-hidde {
+    display: none;
+}
+
+@media screen and (min-width:1200px) {
+    .container1 {
+        width: 100%;
+    }
+    .div-l-4 {
+        width: 20%;
+    }
+    .div-l-5 {
+        width: 20%;
+    }
+    .div-l-16 {
+        width: 80%;
+    }
+    .div-l-20 {
+        width: 100%;
+    }
+    .div-s-hidde {
+        display: block;
+    }
+    .div-l-hidde {
+        display: none;
+    }
+}

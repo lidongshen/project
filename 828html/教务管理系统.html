@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>教务系统</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/boot.css">
+</head>
+
+<body>
+    <div class="zong">
+        <!--左部分-->
+        <div class="left">
+            <div class="top">
+                <div class="llxylogo">
+                    <img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=c029291bb2014a90813e41bb914c5e2f/e61190ef76c6a7ef10253e8ff6faaf51f3de661c.jpg"
+                        alt="">
+                </div>
+                <span>考务管理系统</span>
+            </div>
+            <div class="bottom">
+                <div class="img-font">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="font">自动组卷设置</span>
+                </div>
+                <div class="img-font">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="font">组卷中心</span>
+                </div>
+                <div class="img-font">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span class="font">题库管理</span>
+                </div>
+            </div>
+
+        </div>
+        <!--右部分-->
+        <div class="right">
+            <div class="rtop">
+                <div class="tleft">
+                    <div>试卷管理</div>
+                    <div>课程体系</div>
+                    <div>考试管理</div>
+                </div>
+                <div class="tright">
+                    <div class="tlingdang"><span class="xiaoxi badge">4</span></div>
+                    <div class="tjiaoshi"></div>
+                    <div>95教师</div>
+                    <span class="span glyphicon glyphicon-menu-hamburger" style="margin-left: 10px;"></span>
+                </div>
+            </div>
+            <ul class="rtwo">
+                <li class="xian"></li>
+                <li class="guanli">试卷管理</li>
+                <li class=" glyphicon glyphicon-menu-right"></li>
+                <li class="guanli">考试管理</li>
+                <li class=" glyphicon glyphicon-menu-right"></li>
+                <li class="guanli">课程题库</li>
+            </ul>
+            <div class="rthree">
+                <div class="rttop">
+                    <ul class="rttleft">
+                        <li class="xian"></li>
+                        <li>系名</li>
+                        <li>计算机系</li>
+                    </ul>
+                    <ul class="rttleft">
+                        <li class="xian"></li>
+                        <li>专业</li>
+                        <li>软件工程</li>
+                    </ul>
+                    <ul class="rttleft" id="rttleft3">
+                        <li class="xian"></li>
+                        <li>课程名称</li>
+                        <li>测试课程php</li>
+                    </ul>
+                    <div class="rttright">
+                        <button type="button" class="btn btn-danger">下载模板</button>
+                        <button type="button" class="btn btn-danger">添加题目</button>
+                        <button type="button" class="btn btn-danger">导入客观题</button>
+                        <button type="button" class="btn btn-danger">导入主观题</button>
+
+                    </div>
+
+                </div>
+                <ul class="rttwo">
+                    <li class="xian"></li>
+                    <li>题型</li>
+                    <li><button type="button" class="bw btn btn-danger">客观题</button></li>
+                    <li><button type="button" class="bw bcolor btn btn-danger">主观题</button></li>
+                </ul>
+                <ul class="rttwo">
+                    <li class="xian"></li>
+                    <li>分类</li>
+                    <li><button type="button" class="bw btn btn-danger">单选题</button></li>
+                    <li><button type="button" class="bw bcolor btn btn-danger">多选题</button></li>
+                    <li><button type="button" class="bw bcolor btn btn-danger">判断题</button></li>
+                </ul>
+                <ul class="rttwo">
+                    <li class="xian"></li>
+                    <li>难易</li>
+                    <li><button type="button" class="bw btn btn-danger">全部</button></li>
+                    <li><button type="button" class="bw bcolor btn btn-danger">容易</button></li>
+                    <li><button type="button" class="bw bcolor btn btn-danger">普通</button></li>
+                    <li><button type="button" class="bw bcolor btn btn-danger">困难</button></li>
+                </ul>
+                <div class="ttthree">
+                    <div class="w input-group">
+                        <input type="text" class=" form-control" placeholder="时间排序">
+                        <div class="input-group-btn">
+                            <button type="button" class="sjiantou btn btn-danger dropdown-toggle">
+                                <span class=" glyphicon glyphicon-chevron-down" style="color: #D6D2D7;"></span>
+                        </div>
+                    </div>
+                    <div class="w input-group">
+                        <input type="text" class=" form-control" placeholder="组次序数排序">
+                        <div class="input-group-btn">
+                            <button type="button" class="sjiantou btn btn-danger dropdown-toggle">
+                                <span class=" glyphicon glyphicon-chevron-down" style="color: #D6D2D7;"></span>
+                        </div>
+                    </div>
+                    <div class="w input-group">
+                        <input type="text" class=" form-control" placeholder="请输入题干">
+                    </div>
+                    <button type="button" class="chaxun btn btn-danger"><span class="
+                        glyphicon glyphicon-search"></span>&nbsp;查询</button>
+                </div>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>题干</td>
+                        <td>题型</td>
+                        <td>分类</td>
+                        <td>难易</td>
+                        <td>答案</td>
+                        <td>解析</td>
+                        <td>上传人</td>
+                        <td style="text-align: center;">操作</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td style="color: #C70202;text-align: center;">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td style="color: #C70202;text-align: center;">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td style="color: #C70202;text-align: center;">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="ttfive">
+                    <div class="ttright">
+
+                        <div>共7条</div>
+                        <div class="ttftwo input-group">
+                            <input type="text" class="input form-control" placeholder="5条/页"
+                                style="text-align: center;">
+                            <div class="input-group-btn">
+                                <button type="button" class="button btn btn-default dropdown-toggle">
+                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                            </div>
+                        </div>
+                        <div class="btn-toolbar" role="toolbar" aria-label="...">
+
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="button btn btn-default"><span
+                                        class="glyphicon glyphicon-menu-left"></span></button>
+
+                            </div>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="button btn btn-danger" style="color: #fff;">1</button>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="button btn btn-default">2</button>
+
+                            </div>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="button btn btn-default"><span
+                                        class="glyphicon glyphicon-menu-right"></span></button>
+
+                            </div>
+                        </div>
+                        <div>前往</div>
+                        <div class=" input-group">
+                            <input type="text" class="input form-control" placeholder="1"
+                                style="text-align: center;width: 50px;">
+                        </div>
+                        <div>页</div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+</body>
+
+</html>

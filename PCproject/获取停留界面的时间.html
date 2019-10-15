@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户在页面停留的时间</title>
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <!-- <script>
+        $(function () {
+            //获取页面加载的时间
+            var nowDate = new Date().getTime();
+            console.log(nowDate)
+            $(window).on('beforeunload', function () {
+                //获取页面关闭的时间
+                var closetime = new Date().getTime();
+                //获取页面停留的时间
+                var staytime = closetime - nowDate;
+                console.log(staytime)
+
+                //埋点
+
+
+            })
+
+            
+        })
+    </script> -->
+</head>
+
+<body>
+    <a href="http://baidu.com">shijian</a>
+    <video  src="./mp4/5.mp4"  controls="controls" ></video>
+   
+    <script>
+       
+        var nowtime
+        $("video").on('play', function() {
+            nowtime =new Date().getTime()
+        })
+
+        $("video").on('pause', function() {
+            var closetime =new Date().getTime()
+            var staytime = closetime - nowtime;
+            console.log(staytime)
+        })
+       
+        // video.oncanplaythrough= function (ele) {
+        //     console.log(Math.floor(ele.duration));
+        //}
+        
+    </script>
+
+</body>
+
+</html>

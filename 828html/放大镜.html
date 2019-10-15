@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .zong {
+            width: 850px;
+            height: 400px;
+
+            position: relative;
+        }
+
+        .left {
+            width: 400px;
+            height: 400px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(https://img.alicdn.com/imgextra/i4/1843791120/O1CN011K903jgdHxoMNRg_!!1843791120.jpg_430x430q90.jpg) no-repeat center / 100% 100%;
+        }
+
+        .left-top {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 99;
+        }
+
+        .fangda {
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+
+        }
+
+        .right {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 450px;
+            top: 0;
+            display: none;
+            overflow: hidden;
+        }
+
+        .right-img {
+            width: 800px;
+            height: 800px;
+            
+            background: url(https://img.alicdn.com/imgextra/i4/1843791120/O1CN011K903jgdHxoMNRg_!!1843791120.jpg_430x430q90.jpg) no-repeat center / 100% 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var left = document.querySelector(".left")
+            var rightimg = document.querySelector(".right-img")
+            var right = document.querySelector(".right")
+            var leftTop = document.querySelector(".left-top")
+            var fangda = document.querySelector(".fangda")
+            console.log(left, fangda)
+            left.onmouseover = function () {
+                fangda.style.display = "block"
+                right.style.display = "block"
+                leftTop.onmousemove = function (e) {
+                    var x = e.offsetX
+                    var y = e.offsetY
+                    if (x <= 100) {
+                        x = 100
+                    }
+                    if (x >= 300) {
+                        x = 300
+                    }
+                    if (y <= 100) {
+                        y = 100
+                    }
+                    if (y >= 300) {
+                        y = 300
+                    }
+                    fangda.style.left = x - 100 + "px"
+                    fangda.style.top = y - 100 + "px"
+
+                    rightimg.style.left = -2 * (x - 100) + "px"
+                    rightimg.style.top = -2 * (y - 100) + "px"
+                }
+
+            }
+            left.onmouseout = function () {
+                right.style.display = "none"
+                fangda.style.display = "none"
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="zong">
+
+        <div class="left">
+            <div class="left-top"></div>
+            <div class="fangda"></div>
+        </div>
+        <div class="right">
+            <div class="right-img"></div>
+        </div>
+    </div>
+</body>
+
+</html>

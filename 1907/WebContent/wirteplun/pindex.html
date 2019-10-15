@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>评论</title>
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../layui/css/layui.css">
+<script src="../layui/layui.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../jquery-validation-1.14.0/lib/jquery.js"></script>
+<script src="../jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="../jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+<script src="../js/wirteplun.js"></script>
+<link rel="stylesheet" href="../css/shuaxing.css">
+<script>
+	window.onload=function(){
+		$("form").validate({
+			rules:{
+				pcontent:{
+					required: true,
+				}
+			},
+			messages:{
+				pcontent:{
+					required: "请输入评论的内容",
+				}
+			}
+		})
+	}
+
+</script>
+<style>
+	.error{
+		color:red;
+	}
+</style>
+</head>
+
+<body>
+	<div class="zong">
+    	<i class="load layui-icon layui-icon-loading layui-anim layui-anim-rotate layui-anim-loop"></i> 
+		<p class="loadfont">加载中...</p>
+	</div>
+    
+	<div class="container table-responsive">
+		
+		<h3 style="margin:20px 0;">请填写日报</h3>
+		<form>
+		  <div class="form-group">
+		    <label for="title">标题</label>
+		    <input 	readonly="readonly" type="text" name="title" class="form-control" placeholder="请输入标题" id="title">
+		  </div>
+		  <div class="form-group">
+		    <label for="content">内容</label>
+		    <textarea disabled name="content" class="form-control" rows="3" id="content"  placeholder="请输入内容" ></textarea>
+		  </div>
+		  <div class="form-group">
+		    <label for="pcontent">评论</label>
+		    <textarea name="pcontent" class="form-control" rows="3" id="pcontent"  placeholder="请输入评论" ></textarea>
+		  </div>
+		  	<button type="button" class="plun btn btn-info btn-block">提交</button>
+		</form>
+	</div>
+	
+</body>
+
+</html>

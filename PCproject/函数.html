@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>函数</title>
+    <script>
+        // var arr = [10, 20, 5, 5, 6, 30, 50]
+        //     /*快速*/
+        // function kuaisu(arr, start, end) {
+        //     var left = start
+        //     var right = end
+        //     var temp = arr[left]
+        //     if (left > right) {
+        //         return
+        //     }
+        //     while (left < right) {
+        //         while (left < right && arr[right] >= temp) {
+        //             right--;
+        //         }
+        //         arr[left] = arr[right]
+        //         while (left < right && arr[left] < temp) {
+        //             left++;
+        //         }
+        //         arr[right] = arr[left]
+        //     }
+        //     arr[left] = temp
+        //     kuaisu(arr, start, left - 1)
+        //     kuaisu(arr, left + 1, end)
+
+        // }
+        // kuaisu(arr, 0, arr.length - 1)
+        // console.log(arr)
+
+        // function each(num, callback) {
+        //     for (var i = 0; i < num; i++) {
+        //         callback(i)
+        //     }
+        // }
+        // each(10, function() {
+        //     console.log("1")
+        // })
+        // arr.sort(function(a, b) {
+        //     return b - a
+        // })
+        // console.log(arr)
+        // var stu = [{
+        //     name: "zhangsan",
+        //     sex: "nan",
+        //     age: 20
+        // }, {
+        //     name: "lisi",
+        //     sex: "nan",
+        //     age: 20
+        // }, {
+        //     name: "wangwu",
+        //     sex: "nan",
+        //     age: 20
+        // }]
+        // console.log(stu[0]["name"])
+        // document.write("<table>")
+
+        // for (var i = 0; i < stu.length; i++) {
+        //     document.write("<tr>")
+        //     for (var j in stu[i]) {
+        //         document.write("<td>")
+        //         document.write(stu[i][j])
+        //         document.write("</td>")
+        //     }
+        //     document.write("</tr>")
+        // }
+
+        // document.write("</table>")
+        // var aa = 1;
+
+        // document.write("<b>" + "aa" + "</b>")
+
+
+        var divs = [{
+                width: "100px",
+                height: "200px",
+                border: "1px solid red"
+            }, {
+                width: "300px",
+                height: "200px",
+                border: "1px solid red"
+            }, {
+                width: "400px",
+                height: "200px",
+                border: "1px solid red"
+            }, {
+                width: "200px",
+                height: "200px",
+                border: "1px solid red"
+            }]
+            // for (var i = 0; i < divs.length; i++) {
+
+        //     for (var j = i + 1; j < divs.length; j++) {
+        //         if (divs[i].width > divs[j].width) {
+        //             var temp = divs[i]
+        //             divs[i] = divs[j]
+        //             divs[j] = temp
+        //         }
+        //     }
+        // }
+
+        // var a = [2, 6, 8, 6, 2]
+        // a.sort(function(a, b) {
+        //     return a - b
+        // })
+        // console.log(a)
+        // divs.sort(function(a, b) {
+        //     return a.width - b.width
+        // })
+
+        // for (var i in divs) {
+        //     console.log(divs[i].width)
+        //     document.write("<div style='width:" + divs[i].width + ";height:" + divs[i].height + ";border:" + divs[i].border + ";'>" + "</div>")
+
+        // }
+
+        // var ages = [3, 10, 18, 20];
+        // console.log(ages.findIndex(18))
+        // class myArry {
+        //     constructor() {
+        //         for (var i = 0; i < arguments.length; i++) {
+        //             this[i] = arguments[i]
+        //         }
+
+        //         this.length = arguments.length
+        //     }
+        //     push(val) {
+        //         this[this.length] = val
+        //         this.length = this.length + 1
+        //     }
+        //     pop() {
+        //         var val = this[this.length - 1]
+        //         this.length = this.length - 1
+        //         return val
+        //     }
+
+        // }
+        // Array.prototype = {
+        //     push() {
+        //         this[this.length] = val
+        //         this.length = this.length + 1
+        //     }
+        // }
+
+
+        // var arr = new Array("a", 1, 2, "a")
+        // arr.push(a);
+        // console.log(arr)
+        var num = 0;
+
+        function fn() {
+            num++
+        }
+        console.log(num)
+        fn()
+        console.log(num)
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>

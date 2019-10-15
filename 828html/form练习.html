@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            var form = document.form;
+            var name = document.form.name;
+            var div = document.querySelector("div");
+            form.onsubmit=function(e){
+                if(name.value==""){
+                    alert(1)
+                    e.preventDefault()
+                }
+            }
+        
+            // name.onchange=function(){
+            //     console.log("改变")
+            // }
+            // name.onkeydown=function(){
+            //     console.log("改变")
+            // }
+                div.onclick=function(){
+                    name.value+="123"
+                }
+                name.bind()=function(){
+                    console.log("改变")
+                }
+                    var oldvalue=name.value
+                // setInterval(function(){
+                //     var newvalue=name.value
+                //     if(newvalue!=oldvalue){
+                //         console.log("改变")
+                //     }
+                // },20)
+
+        }
+    </script>
+</head>
+<body>
+    <form action="d" name="form">
+        请输入名字：<input type="text" name="name" ><br>
+        <button type="submit">提交</button>
+
+    </form>
+    <div>+</div>
+</body>
+</html>

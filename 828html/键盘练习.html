@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            //   var div = document.createElement("div")
+            //     div.style.cssText="width:100px;height:100px;border:1px solid red;"
+            //     document.body.appendChild(div)
+
+            var btn = document.querySelector("button")
+
+
+
+            var li = document.querySelectorAll("li")
+            var ul = document.querySelector("ul")
+            console.log(li, ul, btn)
+            btn.onclick = function () {
+                var li1=document.createElement("li")
+                var li2=document.createElement("li")
+                li1.innerHTML="123"
+                li2.innerHTML="123"
+                ul.replaceChild(li1,li[0])
+                ul.replaceChild(li2,li[2])
+                // //克隆
+                // var li2 = li.cloneNode(true)
+                // //插入
+                // ul.appendChild(li2)
+                // //删除
+                // var span = document.querySelectorAll("span")
+                // for (let i = 0; i < span.length; i++) {
+                //     span[i].onclick = function () {
+                //         this.parentNode.parentNode.removeChild(this.parentNode)
+                //     }
+                // }
+            }
+
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <button type="button">添加</button>
+    <ul>
+        <li>
+            选项1 <span>xxxxxx</span>
+        </li>
+        <li>
+            选项1 <span>xxxxxx</span>
+        </li>
+        <li>
+            选项1 <span>xxxxxx</span>
+        </li>
+
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>响应式</title>
+   
+    <style>
+        /* .zong {
+            width: 100%;
+            height: 400px;
+        }
+
+        .left {
+            width: 75%;
+            height: 100%;
+            float: left;
+
+            box-sizing: border-box;
+        }
+
+        .left>div {
+            width: 100%;
+            height: 50%;
+
+        }
+
+        .left-top1 {
+            width: 34%;
+            height: 100%;
+            float: left;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .left-top2 {
+            width: 66%;
+            height: 100%;
+            float: left;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        .right {
+            width: 25%;
+            height: 100%;
+            float: left;
+
+        }
+
+        .right>div {
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .right {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .left-top .left-top2 {
+                width: 100%;
+            }
+
+            .left-bottom .left-top1 {
+                width: 100%;
+            }
+
+            .left-top .left-top1,
+            .left-bottom .left-top2 {
+
+                display: none;
+            }
+        } */
+        /* .zong {
+                width: 600px;
+                height: 400px;
+                margin: auto;
+            }
+        .right{
+                width: 50%;
+                height: 100%;
+                margin: auto;
+                
+            }
+            .right div{
+                width: 100%;
+                height: 100px;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+        @media screen and (min-width: 600px) {
+            .zong {
+                width: 600px;
+                height: 400px;
+                margin: auto;
+            }
+
+            .left {
+                width: 100%;
+                height: 100%;
+                float: left;
+            }
+            .left div{
+                float: left;
+            }
+            .one{
+                width: 100%;
+                height: 200px;
+                background: red;
+            }
+            .two{
+                width:66.66666%;
+                height: 200px;
+                background: green;
+                display: none;
+            }
+            .left div:nth-child(3){
+                width:66.66666%;
+                height: 200px;
+                background: blue;
+                display: none;
+            }
+            .left div:nth-child(4){
+                width: 100%;
+                height: 200px;
+                background:pink;
+                
+            }
+
+            .right{
+                width: 25%;
+                height: 100%;
+                float: left;
+                display: none;
+            }
+            .right div{
+                width: 100%;
+                height: 100px;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+        }
+
+        @media screen and (min-width: 900px) {
+            .zong {
+                width: 900px;
+                height: 400px;
+                margin: auto;
+            }
+
+            .left {
+                width: 100%;
+                height: 100%;
+                float: left;
+            }
+            .left div{
+                float: left;
+            }
+            .one{
+                width: 33.3333%;
+                height: 200px;
+                background: red;
+            }
+            .two{
+                width:66.66666%;
+                height: 200px;
+                background: green;
+                display: block;
+            }
+            .left div:nth-child(3){
+                width:66.66666%;
+                height: 200px;
+                background: blue;
+                display: block;
+            }
+            .left div:nth-child(4){
+                width: 33.3333%;
+                height: 200px;
+                background:pink;
+                
+            }
+
+            .right{
+                width: 25%;
+                height: 100%;
+                float: left;
+                display: none;
+            }
+            .right div{
+                width: 100%;
+                height: 100px;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            .zong {
+                width: 1200px;
+                height: 400px;
+                margin: auto;
+            }
+
+            .left {
+                width: 75%;
+                height: 100%;
+                float: left;
+            }
+            .left div{
+                float: left;
+            }
+            .one{
+                width: 33.3333%;
+                height: 200px;
+                background: red;
+            }
+            .two{
+                width:66.66666%;
+                height: 200px;
+                background: green;
+            }
+            .left div:nth-child(3){
+                background: blue;
+            }
+            .left div:nth-child(4){
+                background:pink;
+            }
+
+            .right{
+                width: 25%;
+                height: 100%;
+                float: left;
+                display: block;
+            }
+            .right div{
+                width: 100%;
+                height: 100px;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+        } */
+
+        .container{
+            height: 400px;
+           
+        }
+        .left{
+            float: left;
+            height: 100%;
+            
+        }
+        .left>div{
+            float: left;
+            height: 50%;
+        }
+
+        .one{
+            
+            background: red;
+        }
+        .two{
+            
+            background: gray;
+        }
+        .three{
+            background: gold;
+
+        }
+        .frou{
+            background: green;
+            
+        }
+        .right{
+            float: left;
+            height: 100%;
+        
+        }
+        .right>div{
+            height: 25%;
+        }
+
+
+
+    </style>
+     <link rel="stylesheet" href="./css/respone.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left div-l-9 div-m-12 div-n-12 div-s-none">
+            <div class="one  div-m-4 div-n-none ">1</div>
+            <div class="two  div-m-8 div-n-12"> 2</div>
+            <div class="three  div-m-8 div-n-12">3 </div>
+            <div class="frou div-m-4 div-n-none">4</div>
+        </div>
+        <div class="right div-l-3 div-m-none div-n-none div-s-12">
+            <div class="one">5</div>
+            <div class="two">6</div>
+            <div class="three">7</div>
+            <div class="frou">8</div>
+        </div>
+    </div>
+    1070
+    730
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--鼠标移动
+    <style>
+        .zong {
+            width: 800px;
+            height: 900px;
+            position: relative;
+        }
+
+        .left {
+            width: 300px;
+            height: 400px;
+
+
+        }
+
+        .left-top {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .left-top>img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .left-bottom {
+            width: 300px;
+            height: 90px;
+            margin-top: 5px;
+        }
+
+        .left-bottom>div {
+            width: 90px;
+            height: 90px;
+            float: left;
+            margin-right: 10px;
+        }
+        .left-bottom>div>img{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .right {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 350px;
+            top: 0;
+            overflow: hidden;
+            display: none;
+        }
+
+        .right>img {
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            var lefttop = document.querySelector(".left-top")
+            var right = document.querySelector(".right")
+            var lefttopimg = document.querySelectorAll(".left-top>img")
+            var leftbottomimg = document.querySelectorAll(".left-bottom>div")
+            var rightimg = document.querySelectorAll(".right>img")
+            for (let i = 0; i < lefttopimg.length; i++) {
+                leftbottomimg[i].onclick = function () {
+                    for (var j = 0; j < lefttopimg.length; j++) {
+                        lefttopimg[j].style.display = "none"
+                        rightimg[j].style.display = "none"
+                    }
+                    lefttopimg[i].style.display = "block"
+                    rightimg[i].style.display = "block"
+                }
+            }
+            lefttop.onmouseover = function () {
+                right.style.display = "block"
+            }
+            lefttop.onmouseout = function () {
+                right.style.display = "none"
+            }
+            for (let i = 0; i < lefttopimg.length; i++) {
+                lefttopimg[i].onmousemove = function (e) {
+                    var x = e.offsetX
+                    var y = e.offsetY
+                    var bw = (rightimg[i].offsetWidth - right.offsetWidth) / lefttopimg[i].offsetWidth
+                    var bh = (rightimg[i].offsetHeight - right.offsetHeight) / lefttopimg[i].offsetHeight
+                    rightimg[i].style.left = -x * bw + "px"
+                    rightimg[i].style.top = -y * bh + "px"
+                }
+
+            }
+        }
+    </script>
+    -->
+    <!--有遮罩-->
+    <style>
+        .zzong{
+            width: 800px;
+            height: 800px;
+            position: relative;
+        }
+
+        .left{
+            width: 300px;
+            height: 400px;
+        }
+        .left-top{
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .left-top>div{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top:0;
+            left: 0;
+            
+        }
+        .left-top div:nth-child(1){
+            background: url(https://img.alicdn.com/imgextra/i1/2261312144/O1CN01W1VV4x1CKtVkmFvQd_!!63-0-lubanu.jpg_430x430q90.jpg) no-repeat 0 0/100% 100%;
+        }
+        .left-top div:nth-child(2){
+            display: none;
+            background: url(https://img.alicdn.com/imgextra/i4/2261312144/O1CN01Nt61721RhziVAHci6_!!2261312144.jpg_430x430q90.jpg) no-repeat 0 0/100% 100%;
+        }
+        .left-bottom{
+            width: 300px;
+            height: 80px;
+            margin-top: 10px;
+        }
+        .left-bottom>div{
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            
+            float: left;
+        }
+        .left-bottom div:nth-child(1){
+            background: url(https://img.alicdn.com/imgextra/i1/2261312144/O1CN01W1VV4x1CKtVkmFvQd_!!63-0-lubanu.jpg_60x60q90.jpg) no-repeat ;
+        }
+        .left-bottom div:nth-child(2){
+            background: url(https://img.alicdn.com/imgextra/i4/2261312144/O1CN01Nt61721RhziVAHci6_!!2261312144.jpg_60x60q90.jpg) no-repeat ;
+        }
+        .mas{
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0;
+            top:0;
+            display: none;
+        }
+        .right{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 340px;
+            top:0;
+            display: none;
+            overflow: hidden;
+        }
+        .right>div{
+            width: 900px;
+            height: 900px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .right div:nth-child(2 ){
+            display: none;
+            background: url(https://img.alicdn.com/imgextra/i4/2261312144/O1CN01Nt61721RhziVAHci6_!!2261312144.jpg) no-repeat 0 0/100% 100%;
+        }
+        .right div:nth-child(1){
+            background: url(https://img.alicdn.com/imgextra/i1/2261312144/O1CN01W1VV4x1CKtVkmFvQd_!!63-0-lubanu.jpg) no-repeat 0 0/100% 100%;
+        }
+        .bmas{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+    </style>
+
+    <script>
+    
+        window.onload=function(){
+            var lefttopimg=document.querySelectorAll(".left-top>div")
+            var leftbottomimg=document.querySelectorAll(".left-bottom>div")
+            var rightimg=document.querySelectorAll(".right>div")
+            var right=document.querySelector(".right")
+            var bmas=document.querySelector(".bmas")
+            var mas=document.querySelector(".mas")
+            var num=0
+            for(let i=0;i<leftbottomimg.length;i++){
+                leftbottomimg[i].onclick=function(){
+                    for(var j=0;j<leftbottomimg.length;j++){
+                        lefttopimg[j].style.display="none"
+                        rightimg[j].style.display="none"
+                    }
+                    num=i
+                    lefttopimg[i].style.display="block"
+                    rightimg[i].style.display="block"
+                }
+            }
+            bmas.onmouseover=function(){
+                right.style.display="block"
+                mas.style.display="block"
+            }
+            bmas.onmouseout=function(){
+                right.style.display="none"
+                mas.style.display="none"
+            }
+            bmas.onmousemove=function(e){
+                var x=e.offsetX
+                var y=e.offsetY
+                var left=x-mas.offsetWidth/2
+                var top=y-mas.offsetHeight/2
+                if(left<0){
+                    left=0
+                }
+                if(left>bmas.offsetWidth-mas.offsetWidth){
+                    left=bmas.offsetWidth-mas.offsetWidth
+                }
+                if(top<0){
+                    top=0
+                }
+                if(top>bmas.offsetHeight-mas.offsetHeight){
+                    top=bmas.offsetHeight-mas.offsetHeight
+                }
+                mas.style.left=left+"px"
+                mas.style.top=top+"px"
+                
+                var bx=right.offsetWidth/mas.offsetWidth
+                var by=right.offsetHeight/mas.offsetHeight
+                console.log(bx,by)
+                rightimg[num].style.left=-bx*left+"px"
+                rightimg[num].style.top=-by*top+"px"
+               
+            }
+
+        }    
+
+
+    </script>
+
+</head>
+
+<body>
+    <!--有遮罩-->
+    <div class="zzong">
+        <div class="left">
+            <div class="left-top">
+                <div></div>
+                <div></div>
+            
+            </div>
+            <div class="left-bottom">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="mas"></div>
+        </div>
+        <div class="bmas"></div>
+        <div class="right">
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--鼠标移动
+    <div class="zong">
+        <div class="left">
+            <div class="left-top">
+                <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1786613187/O1CN01ePYkzx1ZPgow4qc5k_!!1786613187.jpg_430x430q90.jpg"
+                    alt="">
+                <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1786613187/O1CN014QSkUc1ZPgp2ciaWB_!!1786613187.jpg_430x430q90.jpg"
+                    alt="">
+                <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/1786613187/O1CN01DAbMsG1ZPgp0XCB3A_!!1786613187.jpg_430x430q90.jpg"
+                    alt="">
+            </div>
+            <div class="left-bottom">
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1786613187/O1CN01ePYkzx1ZPgow4qc5k_!!1786613187.jpg_60x60q90.jpg"
+                        alt="" width="100%" height="100%">
+                </div>
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1786613187/O1CN014QSkUc1ZPgp2ciaWB_!!1786613187.jpg_60x60q90.jpg"
+                        alt=" " width="100%" height="100%">
+                </div>
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/1786613187/O1CN01DAbMsG1ZPgp0XCB3A_!!1786613187.jpg_60x60q90.jpg"
+                        alt="" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1786613187/O1CN01ePYkzx1ZPgow4qc5k_!!1786613187.jpg"
+                alt="">
+            <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1786613187/O1CN014QSkUc1ZPgp2ciaWB_!!1786613187.jpg"
+                alt="">
+            <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/1786613187/O1CN01DAbMsG1ZPgp0XCB3A_!!1786613187.jpg"
+                alt="">
+        </div>
+    </div>
+    -->
+
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            overflow: hidden;
+            transition: box-shadow 1s ease;
+        }
+        img{
+            width: 100%;height: 100%;
+            transition: transform 2s ease;
+        }
+        div:hover{
+            box-shadow: 0 0 10px greenyellow;
+        }
+        img:hover{
+            transform: scale(1.1,1.1)
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var start1 = document.querySelector(".start")
+            var jixu = document.querySelector(".jixu")
+            var stop1 = document.querySelector(".stop")
+            var div = document.querySelector("div")
+            var speed=10
+            function move(){
+                var width = div.offsetWidth+speed
+                if (width >= 500) { 
+                    speed=-speed
+                    width=500
+                } 
+                if(width<=200){
+                    width=200
+                    clearInterval(t)
+                }
+                div.style.width = width +  "px"
+            }
+            var t
+            start1.onclick=function(){
+                t=setInterval(move, 60);
+            }
+            stop1.onclick=function(){
+                clearInterval(t)
+            }
+            jixu.onclick=function(){
+                t=setInterval(move, 60);
+            }
+        
+        }
+    </script>
+</head>
+
+<body>
+    <button class="start">开始</button>
+    <button class="jixu">继续</button>
+    <button class="stop">暂停</button>
+    <div>
+        <img src="http://www.sxuek.com/statics/images/uek/loudao.jpg" alt="" height="100%">
+    </div>
+</body>
+
+</html>
+
+
+
+
+

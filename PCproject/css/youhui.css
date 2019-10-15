@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.zong{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto ;
+    box-shadow:0 0 20px #bbbbbb; 
+    
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: #02A0E9;
+    padding: 150px 0;
+    float: left;
+    box-sizing: border-box;
+}
+.left>div{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.left-one{
+    margin: 0  0 15px 15px;
+}
+.one-img{
+    width: 50px;
+    height: 100%;
+    float: left;
+    margin-right: 5px;
+    background: url("../img/location.png") no-repeat center / auto 100%;
+}
+.left-one p{
+    float: left;
+    width: auto;
+    height: 100%;
+    font-size: 18px;
+}
+.right-cont{
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.right{
+    width:100%;
+    height: 100%;
+}
+.right-one{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.right-one p{
+    width: auto;
+    height:100%;
+    line-height: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.right-two{
+    width: 100%;
+    height: 30px;
+}
+.right-two p{
+    width:68px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #CCC8BF;
+    background-color: #02A0E9;
+    font-size: 14px;
+}
+.table-box{
+    width: 98%;
+    height:auto;
+    margin: 120px auto 0;
+    padding: 10px 0 10px;
+    box-sizing: border-box;
+    background-color: #D3E9FE;
+}
+.table{
+    width: 98%;
+    height: auto;
+    margin:0 auto;
+}
+td{
+    width: 155px;
+    height: 30px;
+   
+}
+.tr-three{
+    color: #63B3D2;
+}

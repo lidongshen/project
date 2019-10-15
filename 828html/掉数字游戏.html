@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>掉数字游戏</title>
+    <script>
+        window.onload = function () {
+            var content = ["a", 1, 4, "d", "w", "d", "v", "i","g","p"]
+
+            //得分
+            var span1 = document.createElement("span")
+            span1.innerHTML = "得分:"
+            span1.style.cssText = "position: absolute;left:10px;top:10px"
+            document.body.appendChild(span1)
+            //分数
+            var span2 = document.createElement("span")
+            span2.innerHTML = 0
+            span2.style.cssText = "position: absolute;left:50px;top:10px"
+            document.body.appendChild(span2)
+            //创建div，返回一个json
+            function move() {
+                var cont = {}
+                var contentletter = content[Math.floor(Math.random() * content.length)]
+                var numcolor = "rgb(" + parseInt(255 * Math.random()) + "," + parseInt(255 * Math.random()) + "," + parseInt(255 * Math.random()) + ")"
+                var numleft = (document.documentElement.clientWidth - 50) * Math.random()
+                var numtop =  30 * Math.random()
+                var numsize = parseInt(20 + 20 * Math.random())
+                var speed = parseInt(1+ 10 * Math.random())
+
+                var div = document.createElement("div")
+                div.innerHTML = contentletter
+                div.style.cssText = "position: absolute;color:" + numcolor + ";left:" + numleft + "px;top:" + numtop + "px;font-size:" + numsize + "px;"
+                document.body.appendChild(div)
+                cont.ele = div
+                cont.zimu = contentletter
+                cont.color = numcolor
+                cont.left = numleft
+                cont.top = numtop
+                cont.fontSize = numsize
+                cont.speed = speed
+                return cont
+            }
+            //创建一个数组，存放5个div
+            var contlist = []
+            for (var i = 0; i < 5; i++) {
+                contlist.push(move())
+            }
+            
+           //计数器
+            var num = 0
+            //动画
+            function diao() {
+                for (var i = 0; i < contlist.length; i++) {
+                    console.log(contlist.length)
+                    contlist[i].ele.style.top = contlist[i].ele.offsetTop + contlist[i].speed + "px"
+                    if (contlist[i].ele.offsetTop > document.documentElement.clientHeight - contlist[i].ele.offsetHeight) {
+                        num++
+                        if (num >10) {  
+                            alert("你输了，游戏结束")
+                            num=0    
+                        } else {
+                            document.body.removeChild(contlist[i].ele)
+                            contlist.splice(i, 1)
+                            contlist.push(move())
+                        } 
+                    }
+                }
+                requestAnimationFrame(diao)
+            }
+            //方法的调用
+            diao()
+            //得分计数器
+            var conut = 0
+            //键盘按下
+            document.onkeydown = function (e) {
+                var code = e.key
+                for (var i = 0; i < contlist.length; i++) {
+                    if (code == contlist[i].zimu) {
+                        conut++
+                        span2.innerHTML = conut
+                        document.body.removeChild(contlist[i].ele)
+                        contlist.splice(i, 1)
+                        contlist.push(move())
+                    }
+                }
+            }
+            
+
+        }
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.zong{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+
+}
+.left{
+    width: 240px;
+    height: 700px;
+    float: left;
+    overflow: hidden;
+    position: fixed;
+
+    
+}
+.left .top{
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #F8EBEA;
+}
+.llxylogo{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 5px 0 0 10px;
+}
+.llxylogo img{
+    width: 100%;
+    height: 100%;
+}
+.top>span{
+    width: 150px;
+    line-height: 50px;
+    display: inline-block;
+    margin-left: 30px;
+}
+.bottom{
+    width: 100%;
+    
+    
+}
+.bottom>div{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    line-height: 50px;
+    margin: 10px 0; 
+    padding-left:32px;
+    box-sizing: border-box; 
+}
+.font{
+    margin-left:20px; 
+}
+
+.right{
+    width: 950px;
+    height: 700px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 320px;
+    background-color: #F9F9F9;
+    border-left: 3px solid #F8EBEA;
+    overflow: hidden;
+}
+.rtop{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: #B82925;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.tleft{
+    width: 300px;
+    height: 100%;
+    padding: 5px 0;
+    float: left;
+    box-sizing: border-box;
+    
+
+}
+.tleft>div{
+    width: 95px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    
+}
+.tleft>div:hover{
+   background: #A30101;
+    border-bottom: 1px solid #fff;
+}
+.tright{
+    width: 250px;
+    height: 100%;
+    padding: 5px 0;
+    float: right;
+    font-size: 16px; 
+    overflow: hidden;
+}
+.tright>div{
+    width: 50px;
+    height: 100%;
+    float: left;
+    margin-left:  10px;
+}
+.tright div:nth-child(3){
+    line-height: 45px;
+}
+.span{
+    line-height: 42px;
+}
+.xiaoxi{
+    background: #fff;
+    color: #C65A71;
+    margin-left:25px; 
+}
+.tlingdang{
+
+    background: url(../image/lingdang.png) no-repeat center / auto 100%;
+}
+.tjiaoshi{
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: url(../image/timg.jpg) no-repeat center / 100% auto;
+}
+.rtwo{
+    height: 30px;
+    font-size: 16px;
+    color: #838990;
+    padding: 0 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+.rtwo>li{
+    height: 100%;
+    float: left;
+    line-height: 30px;
+    margin:0  5px 0 0;
+    text-align: center;
+}
+.rtwo .xian{
+    width: 3px;
+    background: #BA2C28;
+    margin-right: 10px;
+}
+
+.rthree{
+    width: 930px;
+    margin:0 0 0 10px;
+    background-color: #fff;
+    border: 2px solid #E8EAEF;
+    padding: 20px 10px 0;
+    box-sizing: border-box;
+}
+.rttop{
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E8EAEF;
+    
+}
+.rttleft{
+    width: 120px;
+    height: 100%;
+    font-size: 14px;
+    color: #000;
+    float: left;
+    margin-right:0;
+}
+#rttleft3{
+    width: 180px;
+}
+.rttleft>li{
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    margin:0  5px 0 0;
+    text-align: center;
+}
+.rttleft .xian{
+    width: 3px;
+    height: 50%;
+    margin-top: 10px;
+    background: #BA2C28;
+    margin-right: 5px;
+}
+
+.rttright{
+    height: 100%;
+    float: right;
+    margin-right:10px; 
+}
+.rttwo{
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+   
+}
+
+.rttwo>li{
+    
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    margin:0  10px 0 0;
+    text-align: center;
+}
+.rttwo .xian{
+    width: 3px;
+    height: 50%;
+    margin-top: 10px;
+    background: #BA2C28;
+    margin-right: 5px;
+}
+.bw{
+    width: 70px;
+}
+.bcolor{
+    color: #CB6765;
+    background: #F9E5E5 ;
+    border:none; 
+}
+.ttthree{
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E8EAEF;
+    border-top: 2px solid #E8EAEF;
+}
+.sjiantou{
+    background: #fff;
+    border-color: #CCCCCC;
+}
+.w{
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+}
+.chaxun{
+    float: right;
+}
+
+.ttfive{
+    width: 100%;
+    height: 20px;
+    margin: 20px 0;
+    font-size: 10px;
+    color:#6C6B6E;
+}
+.ttright{
+    width: 380px;
+    height: 100%;
+    float: right;
+}
+.ttright>div{
+    float: left;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    margin-right:5px; 
+}
+.ttftwo{
+    width: 100px;
+    height: 100%;
+}
+.input{
+
+    height: 20px;
+}
+.button{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    font-size: 10px;
+    text-align: center;
+    color: #6C6B6E;
+
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全国优惠名额查询系统</title>
+    <link rel="stylesheet" href="css/youhui.css">
+    <script>
+        window.onload = function () {
+            var wbox = document.querySelectorAll(".left-top")
+            var lcont = document.querySelectorAll(".right")
+            for (let i = 0; i < wbox.length; i++) {
+                wbox[i].onclick = function () {
+                    for (let j = 0; j < wbox.length; j++) {
+                        lcont[j].style.display = "none"
+                        wbox[j].style.background = "#02A0E9"
+                    }
+                    lcont[i].style.display = "block"
+                    this.style.background = "#5BCBD9"
+                }
+            }
+            var trthree=document.querySelectorAll(".tr-three")
+            for(let i=0;i<trthree.length;i++){
+                trthree[i].onclick=function(){
+                    for (let j = 0; j <trthree.length; j++) {
+                        trthree[j].style.background="#D3E9FE"
+                        trthree[j].style.color="#63B3D2"
+                    }
+                    this.style.background="#fff"
+                    this.style.color="red"
+                }
+            }
+        }
+        
+    </script>
+    
+</head>
+
+<body>
+    <div class="zong">
+        <!--左边-->
+        <div class="left">
+            <div class="left-one">
+                <div class="one-img"></div>
+                <p>分布地区</p>
+            </div>
+            <div class="left-top">华北地区</div>
+            <div class="left-top">东北地区</div>
+            <div class="left-top">华东地区</div>
+            <div class="left-top">华南地区</div>
+            <div class="left-top">西北地区</div>
+            <div class="left-top">华中地区</div>
+            <div class="left-top">西南地区</div>
+        </div>
+        <!--右边-->
+        <div class="right-cont">
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>北&nbsp;&nbsp;京</td>
+                            <td>100</td>
+                            <td>92</td>
+                            <td>8</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>天&nbsp;&nbsp;津</td>
+                            <td>100</td>
+                            <td>88</td>
+                            <td>12</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>河北省</td>
+                            <td>100</td>
+                            <td>76</td>
+                            <td>24</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>山西省</td>
+                            <td>100</td>
+                            <td>82</td>
+                            <td>18</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>内蒙古</td>
+                            <td>100</td>
+                            <td>25</td>
+                            <td>75</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>辽宁省</td>
+                            <td>100</td>
+                            <td>62</td>
+                            <td>38</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>吉林省</td>
+                            <td>100</td>
+                            <td>71</td>
+                            <td>29</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>黑龙江</td>
+                            <td>100</td>
+                            <td>81</td>
+                            <td>19</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>山东省</td>
+                            <td>100</td>
+                            <td>55</td>
+                            <td>45</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>江苏省</td>
+                            <td>100</td>
+                            <td>61</td>
+                            <td>39</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>安徽省</td>
+                            <td>100</td>
+                            <td>69</td>
+                            <td>31</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>浙江省</td>
+                            <td>100</td>
+                            <td>74</td>
+                            <td>26</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>福建省</td>
+                            <td>100</td>
+                            <td>86</td>
+                            <td>14</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>上&nbsp;&nbsp;海</td>
+                            <td>100</td>
+                            <td>51</td>
+                            <td>49</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>广东省</td>
+                            <td>100</td>
+                            <td>78</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>广&nbsp;&nbsp;西</td>
+                            <td>100</td>
+                            <td>54</td>
+                            <td>46</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>海南省</td>
+                            <td>100</td>
+                            <td>88</td>
+                            <td>12</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>宁&nbsp;&nbsp;夏</td>
+                            <td>100</td>
+                            <td>41</td>
+                            <td>59</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>新&nbsp;&nbsp;疆</td>
+                            <td>100</td>
+                            <td>89</td>
+                            <td>11</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>青海省</td>
+                            <td>100</td>
+                            <td>56</td>
+                            <td>44</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>陕西省</td>
+                            <td>100</td>
+                            <td>77</td>
+                            <td>23</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>甘肃省</td>
+                            <td>100</td>
+                            <td>76</td>
+                            <td>24</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>湖北省</td>
+                            <td>100</td>
+                            <td>83</td>
+                            <td>17</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>湖南省</td>
+                            <td>100</td>
+                            <td>86</td>
+                            <td>14</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>河南省</td>
+                            <td>100</td>
+                            <td>77</td>
+                            <td>23</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>江西省</td>
+                            <td>100</td>
+                            <td>43</td>
+                            <td>57</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-one">
+                    <p>全国优惠名额查询系统</p>
+                </div>
+                <div class="right-two">
+                    <p>查询</p>
+                </div>
+                <div class="table-box">
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4">查询详情</td>
+                        </tr>
+                        <tr>
+                            <td>省份</td>
+                            <td>分配指标</td>
+                            <td>已定指标</td>
+                            <td>剩余指定名额</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>四川省</td>
+                            <td>100</td>
+                            <td>72</td>
+                            <td>28</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>云南省</td>
+                            <td>100</td>
+                            <td>79</td>
+                            <td>21</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>贵州省</td>
+                            <td>100</td>
+                            <td>62</td>
+                            <td>38</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>西&nbsp;&nbsp;藏</td>
+                            <td>100</td>
+                            <td>87</td>
+                            <td>13</td>
+                        </tr>
+                        <tr class="tr-three">
+                            <td>重&nbsp;&nbsp;庆</td>
+                            <td>100</td>
+                            <td>85</td>
+                            <td>15</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+           
+             
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

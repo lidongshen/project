@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一页</title>
+    <!-- <script>
+        window.onload = function() {
+            var q = document.querySelectorAll("button")[0]
+            var b = document.querySelectorAll("button")[1]
+            q.onclick = function() {
+                history.go(1)
+            }
+            b.onclick = function() {
+                history.go(-1)
+            }
+        }
+    </script> -->
+    <!-- <script>
+        window.onload = function() {
+            var div1 = document.querySelector(".div1")
+            console.log(div1)
+            var div2 = document.querySelector(".div2")
+            var btn = document.querySelectorAll("button")[2]
+            console.log(btn)
+            btn.onclick = function() {
+                console.log(1)
+                div2.innerHTML = div1.innerHTML
+                div1.innerHTML = ""
+            }
+
+        }
+    </script> -->
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+        .one{
+            width: 100px;
+            height: 100px;
+            border:1px solid red;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+        }
+        .button{
+            width: 40px;
+            height: 20px;
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+    </style>
+    <!-- <script>
+        window.onload=function(){
+            var clientwidth=document.documentElement.clientWidth
+            var clienthight=document.documentElement.clientHeight
+            var div = document.querySelector(".one")
+            
+            var divwidth=div.offsetWidth
+            var divheight=div.offsetHeight
+            console.log(divwidth,divheight)
+            var flag1=true
+            var flag2=true
+
+            var t=setInterval(function(){
+               if(div.offsetLeft==0){
+                   flag1=true
+                   console.log(div.offsetLeft)
+               }
+               if((divwidth+div.offsetLeft)>=clientwidth){
+                   flag1=false
+               }
+               if(div.offsetTop==0){
+                   flag2=true
+               }
+               if((div.offsetTop+divheight)>=clienthight){
+                   flag2=false
+               }
+                if(flag1){
+                    div.style.left=div.offsetLeft+ 1+"px"         
+                }else {
+                    div.style.left=div.offsetLeft-1+"px"   
+                }
+                 if(flag2){ 
+                    div.style.top=div.offsetTop+1+"px"
+                }else{
+                    div.style.top=div.offsetTop-1+"px"
+                }
+                
+            }, 40);
+            
+        }
+    </script> -->
+    <script>
+        window.onload=function(){
+            var div=document.querySelector("div")
+            var btn1=document.querySelector(".button")
+            var speedx = 10;
+            var speedy=10;
+            function a() {
+                var lefts = div.offsetLeft+speedx
+                var tops = div.offsetTop+speedy
+                if(lefts<0){
+                    lefts=0
+                    speedx=-speedx
+                }
+                if(lefts>(document.documentElement.clientWidth-div.offsetWidth)){
+                    lefts=document.documentElement.clientWidth-div.offsetWidth
+                    speedx=-speedx
+                }
+                if(tops<0){
+                    tops=0
+                    speedy=-speedy
+                }
+                if(tops>document.documentElement.clientHeight-div.offsetHeight){
+                    tops=document.documentElement.clientHeight-div.offsetHeight
+                    speedy=-speedy
+                }
+                div.style.left=lefts+"px"
+                div.style.top=tops+"px"
+            }
+            var t=setInterval(a, 40);
+            
+            div.onmouseover=function(){
+                clearInterval(t)
+                
+
+            }
+            var flag=true
+            
+            div.onmouseout=function(){
+                if(flag){
+                    t=setInterval(a, 40);
+                }
+            }
+            btn1.onclick=function(){
+                var dleft,dtop
+                if(flag){
+                    
+                    div.style.width="35px"
+                    div.style.height="20px"
+                    btn1.innerHTML="打开"
+                    dleft=div.offsetLeft
+                    dtop=div.offsetTop
+                    flag=false
+                    div.style.left=document.documentElement.clientWidth-div.offsetWidth+"px"
+                    div.style.top=document.documentElement.clientHeight-div.offsetHeight+"px"
+                }else{
+                    console.log(1)
+                    flag=true
+                    div.style.width="100px"
+                    div.style.height="100px"
+                    div.style.left=dleft+"px"
+                    div.style.top=dtop+"px"
+                    btn1.innerHTML="关闭"
+                }
+                }
+
+            }
+
+        
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="one">
+       <div class="button">关闭</div>
+    </div>
+    
+
+
+    <!-- 第一页<br>
+    <a href="./second.html">第二页</a><br>
+    <button type="button" onclick="history.forward()">前进</button>
+    <button type="button" onclick="history.back()">后退</button>
+
+    <div class="div1" style="width:100px;height:200px;border:1px solid red; ">
+        123
+    </div>
+    <button type="button">点击</button>
+    <div class="div2" style="width:100px;height:200px; border: 1px solid #a3a3a3;">
+
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡</title>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .waizong {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .wtop {
+            width: 100%;
+            height: 100px;
+        }
+
+        .wtop a {
+            width: 200px;
+            height: 97px;
+            border: 1px solid red;
+            float: left;
+        }
+
+        .wcont {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        .box {
+            width: 300px;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        .ntop {
+            width: 100%;
+            height: 50px;
+        }
+
+        .ntop a {
+            width: 50%;
+            height: 50px;
+            float: left;
+        }
+
+        .ncont {
+            width: 100%;
+            height: 400px;
+        }
+
+        .ncont>div {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script src="./js/xiangxianngka.js"></script>
+    <script>
+        window.onload = function () {
+            tabs(".wtop a", ".box")
+            tabs(".ntop a", ".ncont>div")
+
+        }
+
+
+    </script> -->
+</head>
+
+<body>
+    <!-- <div class="waizong">
+        <div class="wtop">
+            <a href="javascript:;">外层选项卡1</a>
+            <a href="javascript:;">外层选项卡2</a>
+        </div>
+        <div class="wcont">
+            <div class="box">
+                <div class="ntop">
+                    <a href="javascript:;">选项卡1</a>
+                    <a href="javascript:;">选项卡2</a>
+                </div>
+                <div class="ncont">
+                    <div>1233</div>
+                    <div>123345</div>
+                </div>
+            </div>
+            <div class="box">
+                
+                    <div class="ntop">
+                        <a href="javascript:;">选项卡11</a>
+                        <a href="javascript:;">选项卡21</a>
+                    </div>
+                    <div class="ncont">
+                        <div>12331111</div>
+                        <div>123345111</div>
+                    </div>
+                </div>
+            
+        </div>
+
+    </div> -->
+    <style>
+        .box1 {
+            width: 200px;
+            height: 300px;
+            border: 1px solid red;
+            float: left;
+        }
+        .box1:nth-child(2) .opts a:nth-child(2){
+            background: red;
+        }
+
+        .opts {
+            width: 200px;
+            height: 150px;
+        }
+
+        .con {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+    <div>
+        <div class="box1">
+        <div class="opts">
+            123
+        </div>
+        <div class="con">
+            111111111
+        </div>
+    </div>
+    <div class="box1">
+        <div class="opts">
+            <a href="javascript:;">第2选项</a>
+            <a href="javascript:;">第3选项</a>
+            <a href="javascript:;">第4选项</a>
+        </div>
+        <div class="con">
+            112211111
+        </div>
+    </div>
+    </div>
+    
+
+</body>
+
+</html>

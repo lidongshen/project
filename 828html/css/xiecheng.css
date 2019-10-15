@@ -1,0 +1,1864 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.zong {
+    width: 100%;
+    margin: 0 auto;
+    font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+    color: #333;
+    background-color: #f6f6f6;
+}
+
+.top {
+    width: 100%;
+    height: 36px;
+    background: #F4F4F4;
+}
+
+.top-middle {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.m-left {
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+
+.m-left p {
+    width: 72px;
+    height: 100%;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.but {
+    width: 100px;
+    height: 36px;
+    font-size: 12px;
+    background: #F4F4F4;
+    border: none;
+}
+
+.xiala {
+    width: 500px;
+}
+
+.xiala>li {
+    float: left;
+    width: 200px;
+    height: 20px;
+}
+
+.m-right {
+    float: right;
+    width: 680px;
+    height: 100%;
+}
+
+.m-right>li {
+    float: left;
+    width: 75px;
+    height: 100%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 10px;
+}
+
+.m-right .xian {
+    background: #DDDDDD;
+    width: 3px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.rbtu {
+    width: 70px;
+    padding: 0;
+    height: 30px;
+    font-size: 12px;
+    background: #F4F4F4;
+    border: none;
+}
+
+.wchat {
+    width: 36px;
+    padding: 0;
+    height: 34px;
+    font-size: 12px;
+    background: #F4F4F4;
+    border: none;
+}
+
+.m-right .chat {
+    width: 30px;
+    height: 100%;
+}
+
+.shouji {
+    width: 30px;
+    height: 100%;
+    padding: 10px 16px 9px;
+    box-sizing: border-box;
+    background: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png) no-repeat -90px -57px;
+}
+
+.wechat {
+    width: 30px;
+    height: 100%;
+    padding: 10px 16px 9px;
+    box-sizing: border-box;
+    background: url(https://pic.c-ctrip.com/platform/online/home/sprite2019527.png) no-repeat -92px -89px;
+    ;
+}
+
+.tu {
+    width: 150px;
+    font-size: 12px;
+}
+
+.tu>li {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tu li:nth-child(3) {
+    width: 100%;
+    background: #3983e5;
+}
+
+.twozong {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+
+.two {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.timg {
+    float: left;
+    width: 126px;
+    height: 100%;
+    background: url(https://pic.c-ctrip.com/common/c_logo2013.png) no-repeat center / 100% auto;
+}
+
+.ts {
+    width: 300px;
+    height: 100%;
+    margin-left: 20px;
+    padding: 23px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.thre {
+    width: 180px;
+    float: right;
+}
+
+.three {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #2577e3;
+    font-size: 15px;
+    color: #fff;
+}
+
+.three-middle {
+    width: 1200px;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.three-middle>li {
+    float: left;
+    height: 100%;
+    padding: 0 11px;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+}
+
+.three-btn {
+    height: 100%;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+    background-color: #2577e3;
+    color: #fff;
+}
+
+.fourzong {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+}
+
+.four {
+    width: 1200px;
+    height: 100%;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.four>li {
+    float: left;
+    height: 100%;
+    line-height: 30px;
+    margin: 0 10px;
+}
+
+.jinwai {
+    background: #74a8ed;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.beijng {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 8px 0 0 0;
+}
+
+.hiawai {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -26px 0;
+}
+
+.jipiao {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat 0 0;
+}
+
+.zuche {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -130px 0;
+}
+
+.huoche {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -52px 0;
+}
+
+.chujing {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -26px -52px;
+}
+
+.gaoduan {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -104px -26px;
+}
+
+.mengpiao {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -26px -26px;
+}
+
+.qianzheng {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat 0px -52px;
+}
+
+.baoxian {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -78px -26px;
+}
+
+.wifi {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -130px -26px;
+}
+
+.jieji {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -26px -78px;
+}
+
+.waibi {
+    background: url(https://pic.c-ctrip.com/platform/online/home/un_icon_index_type20170111.png) no-repeat -24px -79px;
+}
+
+.five {
+    width: 100%;
+    height: 340px;
+    position: relative;
+}
+
+.lunbotu {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.lunbotu-box{
+    width: 1000%;
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    
+}
+.lunbotu-box>a{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+.lunbotu-box a:nth-child(1){
+    background: url(https://dimg04.c-ctrip.com/images/zg07170000013qd2aCA36.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(10){
+    background: url(https://dimg04.c-ctrip.com/images/zg07170000013qd2aCA36.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(2){
+    background: url(https://dimg04.c-ctrip.com/images/zg0i180000013nhb5589A.jpg) no-repeat center/100%  100%;
+}
+.lunbotu-box a:nth-child(3){
+    background: url(https://dimg04.c-ctrip.com/images/zg0q1800000147ai7A062.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(4){
+    background: url(https://dimg04.c-ctrip.com/images/zg0n170000012yyfxF41D.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(5){
+    background: url(https://dimg04.c-ctrip.com/images/zg011700000121b1s2F86.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(6){
+    background: url(https://dimg04.c-ctrip.com/images/zg09180000014fecy5501.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(7){
+    background: url(https://dimg04.c-ctrip.com/images/zg0k1700000130bhaCA00.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(8){
+    background: url(https://dimg04.c-ctrip.com/images/zg0h180000013gofdEE0B.jpg) no-repeat center/100% 100%;
+}
+.lunbotu-box a:nth-child(9){
+    background: url(https://dimg04.c-ctrip.com/images/zg0q180000013glp36BF1.jpg) no-repeat center/100% 100%;
+}
+.btn1{
+    width:200px;
+    height: 20px;
+    position: absolute;
+    right: 250px;
+    bottom: 10px;
+    
+}
+.btn1>div{
+    width:14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    float: left;
+
+}
+.biaoge {
+    width: 580px;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 10%;
+    font-size: 14px;
+}
+
+.biaoge-left {
+    float: left;
+    width: 90px;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2577e3;
+}
+
+.biaoge-left>li {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    border-bottom: 1px dashed #aac3f1;
+}
+
+.biaoge-left li:nth-child(7) {
+    border-bottom: none;
+}
+
+.biaoge-right {
+    float: left;
+    width: 490px;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.wbiaoge-cont{
+    width: 100%;
+    height: 100%;
+   
+    padding: 20px 10px 5px;
+    box-sizing: border-box;
+}
+.biaoge-right-top {
+    width: 100%;
+    height: 27px;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #DDDDDD;
+}
+.tuijian{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.tuijian-left{
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+.tuijian-right{
+    width: 410px;
+    height: 100%;
+    float: left;
+}
+.tuijian-right>div{
+    width: 74px;
+    height: 32px;
+    float: left;
+    background-color: #F7F7F7;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 25px;
+    margin: 0 5px 10px 0;
+}
+.three-left{
+    width: 216px;
+    height: 58px;
+    margin-right: 20px;
+    float: left;
+    background: url(https://pages.c-ctrip.com/dm/0001xxl/%E9%95%BF%E9%9A%86%E5%9B%BE%E6%A0%87216_58px.jpg) no-repeat center / 100% auto;
+}
+.three-right{
+    width: 216px;
+    height: 58px;
+    float: left;
+    background: url(https://images3.c-ctrip.com/dj/201907/tmtj_216_58.jpg) no-repeat center / 100% auto;
+}
+
+.biaoge-right-top>span {
+    margin: 0 10px;
+}
+
+
+.biaoge-right-two {
+    width: 100%;
+    height: 230px;
+    margin-top: 20px;
+}
+
+.zhongjian {
+    margin: 0 15px;
+}
+
+.hang {
+    margin: 10px 0;
+}
+
+.seach-btn {
+    margin: 10px 0 0 400px;
+}
+
+.six {
+    width: 1200px;
+    height: 430px;
+    margin: 20px auto;
+}
+
+.six-top {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+    border-bottom: 2px solid #3983e5;
+}
+
+.six-top>li {
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.six-bottom {
+    height: 390px;
+    padding: 15px 19px 0;
+    box-sizing: border-box;
+    border: 1px solid #a3a3a3;
+    background: #fff;
+    overflow: hidden;
+}
+.six-bottom-cont{
+    width: 100%;
+    height: 390px;
+}
+
+.six-bottom-top {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.six-bottom-top>li {
+    float: left;
+    margin-right: 30px;
+    color: #3983e5;
+}
+
+.six-bottom-top>li:hover {
+    background: #3983e5;
+    color: #fff;
+}
+.six-bottom-bottom{
+    width: 100%;
+    height: 340px;
+}
+.six-bottom-left {
+    height: 100%;
+    float: left;
+}
+
+.six-bottom-left>li {
+    height: 160px;
+    float: left;
+    position: relative;
+    margin: 0 0 10px 10px;
+    overflow: hidden;
+}
+.beijing-top{
+    width: 100%;
+    height: 100%;
+    
+}
+.beijing-bottom{
+    width: 100%;
+    height: 100%;
+    padding: 26px 10px 10px;
+    box-sizing: border-box;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 3;
+}
+.beijing-bottom-one{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 22px;
+    
+    line-height: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.beijing-bottom-two{
+    width: auto;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+.beijing-bottom-three{
+    margin-top: 18px;
+    text-align: center;
+}
+.six-bottom-left li:nth-child(1) {
+    background: url(https://dimg02.c-ctrip.com/images/1004180000013o0jn6633_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(2) {
+    background: url(https://dimg05.c-ctrip.com/images/100r12000000swa1q2CDE_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(3) {
+    background: url(https://dimg05.c-ctrip.com/images/100f180000013p2c086E4_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(4) {
+    background: url(https://dimg01.c-ctrip.com/images/fd/tg/g1/M07/7A/98/CghzfVWwtayAcRE2ABaIuxjYffE235_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(5) {
+    background: url(https://dimg04.c-ctrip.com/images/100b11000000qbl7v8A10_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(6) {
+    background: url(https://dimg02.c-ctrip.com/images/1002180000013w3zi8148_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(7) {
+    background: url(https://dimg01.c-ctrip.com/images/fd/tg/g1/M05/C7/51/CghzflWwsHOAMni3AA2c-FPVxCk836_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+
+.six-bottom-left li:nth-child(8) {
+    background: url(https://dimg01.c-ctrip.com/images/100m0u000000jqip1B411_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan1{
+    background: url(https://dimg01.c-ctrip.com/images/100810000000perhu90FB_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan2{
+    background: url(https://dimg02.c-ctrip.com/images/10010s000000hwbcj4F64_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan3{
+    background: url(https://dimg03.c-ctrip.com/images/100s0y000000mc3qf0838_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan4{
+    background: url(https://dimg02.c-ctrip.com/images/fd/tg/g4/M05/B2/24/CggYHFZ4wWiAKCnuADUUoCnU8w4935_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan5{
+    background: url(https://dimg03.c-ctrip.com/images/fd/tg/g1/M02/79/29/CghzfVWwp1SAD5gHACTpIEDO0sk435_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan6{
+    background: url(https://dimg03.c-ctrip.com/images/fd/tg/g2/M04/68/0B/Cghzf1Wkv2iAF916ABXwhHhXujI000_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan7{
+    background: url(https://dimg01.c-ctrip.com/images/100u0y000000lzko9F7A8_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#dongnan8{
+    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g5/M04/6E/D3/CggYsFbvxkWAW8azAApi7j9YZzA868_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou1{
+    background: url(https://dimg05.c-ctrip.com/images/10050a0000004xyzo1CB3_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou2{
+    background: url(https://dimg04.c-ctrip.com/images/fd/tg/g2/M06/2A/05/CghzgFWTqBuARe7bAAknq4pGU7Y522_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou3{
+    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g3/M03/D7/26/CggYG1bGymyAYcDvAA2KNxQbifw151_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou4{
+    background: url(https://dimg02.c-ctrip.com/images/100e0h0000008s3hz316B_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou5{
+    background: url(https://dimg08.c-ctrip.com/images/fd/tg/g6/M03/87/3B/CggYtFc5gvmALgmsABKDClSFbvg527_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou6{
+    background: url(https://dimg02.c-ctrip.com/images/100g060000001z4g97FCD_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou7{
+    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g6/M02/00/73/CggYs1cfF7qAU_kuAArgoZBEnXw227_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+#ouzhou8{
+    background: url(https://dimg07.c-ctrip.com/images/1002060000001o2634FBB_C_221_166.jpg) no-repeat 0 0/100% auto;
+}
+.yuexiao {
+    background: #FF6913;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.didian {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 24px;
+    left: 54px;
+}
+
+.didian1 {
+    width: 102px;
+    height: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.menoy {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 102px;
+    height: 36px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menoy span {
+    display: inline-block;
+    font-size: 22px;
+    color: #f60;
+}
+
+.six-bottom-right {
+    height: 330px;
+    float: left;
+    background: url(https://dimg04.c-ctrip.com/images/zg0n180000013lxjp6299.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben1{
+    background: url(https://dimg08.c-ctrip.com/images/100v0p000000gamlgE533_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben2{
+    background: url(https://dimg02.c-ctrip.com/images/100p0v000000jgybk92AE_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben3{
+    background: url(https://dimg08.c-ctrip.com/images/100c0z000000nt6ja25B8_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben4{
+    background: url(https://dimg01.c-ctrip.com/images/100b08000000360497DB3_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben5{
+    background: url(https://dimg07.c-ctrip.com/images/10040x000000ld3wx40AB_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben6{
+    background: url(https://dimg02.c-ctrip.com/images/10090x000000li8ilCCC5_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben7{
+    background: url(https://dimg05.c-ctrip.com/images/1001080000003605k45B7_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#riben8{
+    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g5/M08/6B/BA/CggYsFcV18aACjyiABjE_uBHFyE920_C_221_166.jpg) no-repeat 0 0/ 100% auto;
+}
+#ribenright{
+    background: url(https://dimg04.c-ctrip.com/images/zg0518000001446bw852F.jpg) no-repeat 0 0/ 100% auto;
+}
+
+.seven {
+    width: 1200px;
+    height: 430px;
+    margin: 20px auto;
+}
+
+#sh {
+    height: 300px;
+}
+
+.seven-top {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+    border-bottom: 2px solid #3983e5;
+}
+
+.seven-top>li {
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    margin-right: 20px;
+}
+.wjiu-cont{
+    width: 100%;
+    height:100%;
+}
+.seven-bottom {
+    width: 100%;
+    height:390px;
+    padding: 15px 19px 0;
+    box-sizing: border-box;
+    border: 1px solid #a3a3a3;
+    overflow: hidden;
+    background: #fff;
+    overflow: hidden;
+}
+
+.seven-bottom-left {
+    width: 227px;
+    height: 375px;
+    padding: 0 20px 15px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 12px;
+    color: #666666;
+}
+
+.seven-bottom-left>li {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+}
+.seven-bottom-left>li:hover {
+    color: #3983e5;
+}
+.seven-bottom-left li:nth-child(1) {
+    color: #333333;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.seven-bottom-left li:nth-child(7) {
+    color: #333333;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.seven-bottom-right {
+    width: 930px;
+    height: 390px;
+    float: left;
+    padding: 0 19px;
+    box-sizing: border-box;
+    border-left: 1px dotted #a3a3a3;
+}
+
+.seven-bottom-right-top {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.seven-bottom-right-top>li {
+    float: left;
+    margin-right: 30px;
+    color: #3983e5;
+}
+
+.seven-bottom-right-top>li:hover {
+    background: #3983e5;
+    color: #fff;
+}
+.jiu-cont{
+    width: 100%;
+    height: 340px;
+}
+.seven-bottom-right-left {
+    width: 690px;
+    height: 100%;
+    float: left;
+}
+
+.seven-bottom-right-left>li {
+    width: 220px;
+    height: 160px;
+    float: left;
+    position: relative;
+    margin: 0 10px 10px 0;
+    transition:box-shadow 1s ease,transform 1s ease;
+    
+
+}
+.seven-bottom-right-left>li:hover {
+   transform: scale(1.05,1.05);
+   box-shadow: 0px 0px 5px #a3a3a3;
+}
+.seven-bottom-right-left li:nth-child(1) {
+    background: url(https://images3.c-ctrip.com/overseas/city/singapore256-256.jpg) no-repeat center/100% auto;
+}
+
+.seven-bottom-right-left li:nth-child(2) {
+    background: url(https://images3.c-ctrip.com/overseas/city/bangkok256-256.jpg) no-repeat center/100% auto;
+}
+
+.seven-bottom-right-left li:nth-child(3) {
+    background: url(https://images3.c-ctrip.com/overseas/city/tokyo256-256.jpg) no-repeat center/100% auto;
+}
+
+.seven-bottom-right-left li:nth-child(4) {
+    background: url(https://images3.c-ctrip.com/overseas/city/kualalumpur256-256.jpg) no-repeat center/100% auto;
+}
+
+.seven-bottom-right-left li:nth-child(5) {
+    background: url(https://images3.c-ctrip.com/overseas/city/osaka256-256.jpg) no-repeat center/100% auto;
+}
+
+.seven-bottom-right-left li:nth-child(6) {
+    background: url(https://images3.c-ctrip.com/ad/apph5/2017/phuket_256_256_01.jpg) no-repeat center/100% auto;
+}
+#puji1{
+    background: url(https://images3.c-ctrip.com/ad/apph5/2017/phuket_256_256_01.jpg) no-repeat center/100% auto;
+}
+#puji2{
+    background: url(https://images3.c-ctrip.com/overseas/city/bali256-256.jpg) no-repeat center/100% auto;
+}
+#puji3{
+    background: url(https://images3.c-ctrip.com/overseas/city/kotakinabalu256-256.jpg) no-repeat center/100% auto;
+}
+#puji4{
+    background: url(https://images3.c-ctrip.com/ad/bigbutton/promotion/201703/Santorini_256_256.jpg) no-repeat center/100% auto;
+}
+#puji5{
+    background: url(https://images3.c-ctrip.com/overseas/city/langkawi256-256.jpg) no-repeat center/100% auto;
+}
+#puji6{
+    background: url(https://images3.c-ctrip.com/overseas/city/Pattaya256-256.jpg) no-repeat center/100% auto;
+}
+#pu1{
+    background: url(https://images3.c-ctrip.com/overseas/city/chiangmai256-256.jpg) no-repeat center/100% auto;
+}
+#pu2{
+    background: url(https://images3.c-ctrip.com/overseas/city/hochiminhcity256-256.jpg) no-repeat center/100% auto;
+}
+#pu3{
+    background: url(https://images3.c-ctrip.com/overseas/city/siemreap256-256.jpg) no-repeat center/100% auto;
+}
+#pu4{
+    background: url(https://images3.c-ctrip.com/overseas/city/kyoto256-256.jpg) no-repeat center/100% auto;
+}
+#pu5{
+    background: url(https://images3.c-ctrip.com/overseas/city/melbourne256-256.jpg) no-repeat center/100% auto;
+}
+#pu6{
+    background: url(https://images3.c-ctrip.com/overseas/city/Moscow256-256.jpg) no-repeat center/100% auto;
+}
+.guowaididian {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 24px;
+    left: 54px;
+}
+
+.guowaididian1 {
+    width: 102px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.number {
+    width: 92px;
+    height: 18px;
+    line-height: 18px;
+    margin: 5px auto;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.guowaimenoy {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 102px;
+    height: 36px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.guowaimenoy span {
+    display: inline-block;
+    font-size: 22px;
+    color: #f60;
+}
+
+.seven-bottom-right-right {
+    width: 200px;
+    height: 330px;
+    float: left;
+    background: url(https://pages.c-ctrip.com/hotel/201805/thailand/220330.jpg) no-repeat center /auto 100%;
+}
+.jipiao-cont{
+    width: 1160px;
+    height: 340px;
+}
+.eight-bottom-left {
+    width: 920px;
+    height: 100%;
+    float: left;
+}
+
+.eight-bottom-left>li {
+    width: 220px;
+    height: 106px;
+    float: left;
+    padding: 15px 12px;
+    margin: 0 10px 10px 0;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    transition:box-shadow 1s ease; 
+}
+.eight-bottom-left>li:hover {
+    box-shadow: 0 0 10px #333333;
+    
+}
+.shanghai {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.s {
+    margin: 0 5px;
+    transform: rotate(90deg);
+}
+
+.date {
+    width: 100%;
+    height: 27px;
+    color: #999999;
+}
+
+.primry {
+    width: 100%;
+    height: 27px;
+}
+
+.primry span {
+    display: inline-block;
+    color: #f60;
+    font-size: 22px;
+}
+
+.liqiang {
+    margin-left: 50px;
+    background: #ffb000;
+}
+
+.eight-bottom-right {
+    width: 220px;
+    height: 330px;
+    margin-left: 10px;
+    float: left;
+    background: url(https://images4.c-ctrip.com/target/60010q000000gsgjnAD29.jpg) no-repeat center / 100% auto;
+}
+
+.nine-bottom {
+    width: 100%;
+    height: 260px;
+    border: 1px solid #a3a3a3;
+    background: #fff;
+    overflow: hidden;
+}
+.wmudi-cont{
+    width: 100%;
+    height: 100%;
+}
+.jingxuan{
+    width:100%;
+    height: 20px;
+    margin:20px 0 10px 20px;
+}
+.jingxuan p{
+    width:40px;
+    height: 100%;
+    line-height: 20px;
+    background: #3983e5;
+    color:#fff;
+    text-align: center;
+    
+    
+}
+.jingxuan-bottom{
+    width: 100%;
+    height: 180px;
+    margin: 0 0 0 20px;
+}
+.jingxuan-bottom>div{
+    width: 220px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    
+}
+.jingxuan-bottom>div p{
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background:rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+    padding:5px 10px 0;
+    box-sizing: border-box; 
+    
+    
+}
+.jingxuan-bottom>div p span{
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+ 
+}
+.huoli{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.jingxuan-bottom div:nth-child(1){
+  background: url(https://images3.c-ctrip.com/dj/201808/mdd/qjd/sgpc.jpg) no-repeat center /220px auto ;
+}
+.jingxuan-bottom div:nth-child(2){
+  background: url(https://images4.c-ctrip.com/target//100t0i0000009mrsd86B4.jpg) no-repeat center /220px auto ;
+}
+.jingxuan-bottom div:nth-child(3){
+  background: url(https://dimg20.c-ctrip.com/images/70060s000000hvfh86FE6.jpg) no-repeat center /220px auto;
+}
+.jingxuan-bottom div:nth-child(4){
+  background: url(https://dimg20.c-ctrip.com/images/70030o000000en99jDA68.jpg) no-repeat center /220px auto;
+}
+.jingxuan-bottom div:nth-child(5){
+  background: url(https://dimg20.c-ctrip.com/images/70030n000000e34vwB318.jpg) no-repeat center /220px auto;
+}
+.nine-bottom-left {
+    width: 227px;
+    height: 100%;
+    padding: 0 20px 15px;
+    float: left;
+    
+    border-right: 1px dotted #a3a3a3;
+}
+
+.nine-bottom-left>li {
+    overflow: hidden;
+    width: auto;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+    margin: 0 0 15px 0;
+    padding: 0 5px;
+    color: #666666;
+}
+.nine-bottom-left>li:hover {
+    color: #3983e5;
+}
+.nine-bottom-left li:nth-child(1) {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    clear: both;
+    color: #333333;
+    font-size: 14px;
+    margin: 5px 0 5px;
+}
+
+.nine-bottom-right {
+    width: 970px;
+    height: 100%;
+    float: left;
+    padding: 15px 19px;
+    box-sizing: border-box;
+}
+
+.nine-bottom-right-top {
+    width: 100%;
+    height: 20px;
+}
+
+.nine-bottom-right-top>li {
+    float: left;
+    margin-right: 30px;
+    color: #3983e5;
+}
+
+.nine-bottom-right-top>li:hover {
+    background: #3983e5;
+    color: #fff;
+}
+
+.nine-bottom-right-bottom {
+    width: 100%;
+    height: 200px;
+    padding: 0 15px 0;
+    box-sizing: border-box;
+}
+
+.nine-bottom-right-bottom>li {
+    width: 210px;
+    height: 100%;
+    float: left;
+    margin: 0 0 10px 10px;
+    overflow: hidden;
+    transition: box-shadow 1s ease;
+}
+.nine-bottom-right-bottom>li:hover {
+    box-shadow: 0 0 10px #333333;
+}
+.ten-bottom-right-bottom {
+    width: 100%;
+    height:160px;
+    padding: 0 20px;
+    margin: 25px 0 35px;
+    box-sizing: border-box;
+}
+
+.ten-bottom-right-bottom>li {
+    width: 210px;
+    height: 100%;
+    float: left;
+    margin: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+
+.ten-bottom-right-bottom li:nth-child(1) {
+    background: url(https://dimg06.c-ctrip.com/images/100k0w000000kgkgfC8BA_R_220_160.jpg)no-repeat center /210px  auto ;
+}
+
+.ten-bottom-right-bottom li:nth-child(2) {
+    background: url(https://dimg02.c-ctrip.com/images/100e0w000000kfb626E83_R_220_160.jpg)no-repeat center /210px  auto;
+}
+
+.ten-bottom-right-bottom li:nth-child(3) {
+    background: url(https://dimg01.c-ctrip.com/images/100m0w000000kuq4eB05F_R_220_160.jpg)no-repeat center /210px  auto;
+}
+
+.ten-bottom-right-bottom li:nth-child(4) {
+    background: url(https://dimg04.c-ctrip.com/images/10030v000000k4kfb4E3C_R_220_160.jpg)no-repeat center /210px  auto;
+}
+#wenquan1{
+    background: url(https://dimg04.c-ctrip.com/images/fd/tg/g3/M09/46/F5/CggYG1ZucFWALuPjAAAu62TVM5A595_R_220_160.jpg)no-repeat center /210px  auto;
+}
+#wenquan2{
+    background: url(https://dimg01.c-ctrip.com/images/fd/tg/g3/M02/60/28/CggYGVbX65iATNdVAAA7LewgnC4836_R_220_160.jpg)no-repeat center /210px  auto;
+}
+#wenquan3{
+    background: url(https://dimg02.c-ctrip.com/images/fd/tg/g4/M05/04/29/CggYHVaEmsCAcVPBAAAyJM7bRE0393_R_220_160.jpg)no-repeat center /210px auto;
+}
+#wenquan4{
+    background: url(https://dimg05.c-ctrip.com/images/fd/tg/g3/M05/67/2C/CggYG1Z7XuuAPszkAABAZUwefFE594_R_220_160.jpg)no-repeat center /210px  auto;
+}
+.mudi {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.car {
+    width: 100%;
+    height: 150px;
+    transition: transform 1s ease;
+}
+.car:hover{
+    transform: scale(1.1,1.1)
+}
+.car1 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Ford_Fiesta.png) no-repeat center /100% auto  ;
+}
+
+.car2 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Kia_Rio.png) no-repeat center /100% auto;
+}
+
+.car3 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Toyota_Corolla.png) no-repeat center /100% auto;
+}
+
+.car4 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Skoda_Fabia.png) no-repeat center /100% auto;
+}
+.car11 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Toyota_Yaris.png) no-repeat center /100% auto;
+}
+.car22 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Fiat_500.png) no-repeat center /100% auto;
+}
+.car33 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Smart_Forfour_2_Doors.png) no-repeat center /100% auto;
+}
+.car44 {
+    background: url(https://pic.c-ctrip.com/car/osd/online/vehicle_new/Smart_For_Two.PNG) no-repeat center /100% auto;
+}
+.ca1{
+    background: url(https://pic.c-ctrip.com/car/igt/sku/och/mg.jpg) no-repeat center /100% auto;
+}
+.ca2{
+    background: url(https://pic.c-ctrip.com/car/igt/sku/och/xg.jpg) no-repeat center /100% auto;
+}
+
+.beat {
+    width: 100%;
+    height: 150px;
+    transition: transform 1s ease;
+}
+.beat:hover {
+    transform: scale(1.1,1.1)
+}
+.beat1 {
+    background: url(https://dimg04.c-ctrip.com/images/350p1600000109qx2C354_C_280_158.jpg) no-repeat center /100% auto;
+}
+
+.beat2 {
+    background: url(https://dimg06.c-ctrip.com/images/350l0n000000ec6k84D0F_C_280_158.jpg) no-repeat center /100% auto;
+}
+
+.beat3 {
+    background: url(https://dimg04.c-ctrip.com/images/350b10000000pm2zgA5CF_C_280_158.jpg) no-repeat center /100% auto;
+}
+
+.beat4 {
+    background: url(https://dimg04.c-ctrip.com/images/350i10000000pfzsaB933_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat11{
+    background: url(https://dimg04.c-ctrip.com/images/35050y000000m70qi8761_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat21{
+    background: url(https://dimg04.c-ctrip.com/images/350c12000000ru2tp0915_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat31{
+    background: url(https://dimg04.c-ctrip.com/images/35040y000000lstzuAA46_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat41{
+    background: url(https://dimg04.c-ctrip.com/images/350i14000000wiot5F79E_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat13{
+    background: url(https://dimg04.c-ctrip.com/images/350d15000000y0u1c2F06_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat23{
+    background: url(https://dimg04.c-ctrip.com/images/3504160000010d0py3A8A_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat33{
+    background: url(https://dimg04.c-ctrip.com/images/350k14000000w6clg1FA0_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat43{
+    background: url(https://dimg04.c-ctrip.com/images/350j13000000ujuky3A48_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat14{
+    background: url(https://dimg04.c-ctrip.com/images/350c12000000si26y150E_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat24{
+    background: url(https://dimg04.c-ctrip.com/images/350q14000000w0d8g2E3F_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat34{
+    background: url(https://dimg04.c-ctrip.com/images/350u170000011g0at704A_C_280_158.jpg) no-repeat center /100% auto;
+}
+.beat44{
+    background: url(https://dimg04.c-ctrip.com/images/350n13000000vc1ru305D_C_280_158.jpg) no-repeat center /100% auto;
+}
+
+.quanqiu {
+    width: 100%;
+    height: 150px;
+    transition: transform 1s ease;
+}
+.quanqiu:hover {
+    transform: scale(1.1,1.1)
+}
+
+
+.quanqiu1 {
+    background: url(https://images4.c-ctrip.com/target/zd0d0i00000097qa9955E_C_570_285.jpg) no-repeat center /100% auto;
+}
+
+.quanqiu2 {
+    background: url(https://images4.c-ctrip.com/target/zd0d0f0000007ckfk0B0C_C_570_285.jpg) no-repeat center /100% auto;
+}
+
+.quanqiu3 {
+    background: url(https://images4.c-ctrip.com/target/zd0w0j000000b7c8g09C8_C_570_285.jpg) no-repeat center /100% auto;
+}
+
+.quanqiu4 {
+    background: url(https://images4.c-ctrip.com/target/zd0d080000003hpvb9BBA_C_570_285.jpg) no-repeat center /100% auto;
+}
+.quanqiu11{
+    background: url(https://images4.c-ctrip.com/target/zd0614000000x5efv5FD2_C_570_285.jpg) no-repeat center /100% auto;
+}
+.quanqiu21{
+    background: url(https://images4.c-ctrip.com/target/zd0w0u000000j9gw1D11C_C_570_285.jpg) no-repeat center /100% auto;
+}
+.quanqiu31{
+    background: url(https://images4.c-ctrip.com/target/zd0213000000toosa08C1_C_570_285.jpg) no-repeat center /100% auto;
+}
+.quanqiu41{
+    background: url(https://images4.c-ctrip.com/target/zd0v060000001lxgwC1F3_C_570_285.jpg) no-repeat center /100% auto;
+}
+
+.cardesc {
+    width: 100%;
+    height: 50px;
+}
+
+.us {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    font-size: 12px;
+    color: #666666;
+    overflow: hidden;
+}
+
+.us2 {
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    line-height: 35px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.us3 {
+    width: 65px;
+    height: 35px;
+    margin: 0;
+    float: right;
+    color: #666666;
+}
+
+.us4 {
+    border: 1px solid #d18f00;
+    color: #d18f00;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 10px;
+    float: right;
+}
+
+.us3 span {
+    display: inline-block;
+    font-size: 22px;
+    color: #f60;
+}
+
+.twenty {
+    width: 1200px;
+    height: 193px;
+    margin: 20px auto;
+}
+
+.twenty-top {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    color: #06c;
+    font-size: 16px;
+    border-bottom: 2px solid #3983e5;
+}
+
+.twenty-bottom {
+    margin: 10px 0 0;
+    width: 100%;
+    height: 145px;
+}
+
+.twenty-bottom>li {
+    margin-left: 10px;
+    width: 386px;
+    height: 145px;
+    float: left;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+.twenty-bottoms>li:hover {
+    background: #e2eeff;
+}
+.twenty-bottom-top {
+    width: 100%;
+    height: 102px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.twenty-bottom-top:hover {
+    background: #e2eeff;
+}
+#cha {
+    border-bottom: none;
+}
+
+.twenty-bottom-top-left {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 15px 0 0 20px;
+    float: left;
+}
+
+.twenty-bottom-top-left1 {
+    background: #abcbf5 url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png) no-repeat 5px 19px/ 100% auto;
+}
+
+.twenty-bottom-top-left2 {
+    background: #cbe2b3 url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png) no-repeat 5px -42px/ 100% auto;
+}
+
+.twenty-bottom-top-left3 {
+    background: #f6dbb9 url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png) no-repeat 5px -110px/ 100% auto;
+}
+
+#chaimg1 {
+    background: #F8c2b3 url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png) no-repeat 0px -172px/100%;
+    margin-top: 40px;
+}
+
+#chaimg2 {
+    background: #FBE09F url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png) no-repeat -5px -230px/ 100%;
+    margin-top: 40px;
+}
+
+#chaimg3 {
+    background: #C3CBFF url(https://pic.c-ctrip.com/platform/online/home/un_index_supply.png) no-repeat 5px -290px/ 100%;
+    margin-top: 40px;
+}
+
+#chafont {
+    margin-top: 40px;
+}
+
+.twenty-bottom-top-right {
+    width: 254px;
+    height: 80px;
+    margin: 15px 0 0 10px;
+    float: left;
+}
+
+.wif {
+    font-size: 16px;
+    color: #333;
+}
+
+.q {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.twenty-bottom-bottom {
+    width: 100%;
+    height: 40px;
+}
+
+.list {
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+   
+}
+
+.line {
+    width: 1px;
+    height: 24px;
+    margin-top:8px;
+    border-right: 1px dashed #a3a3a3;
+}
+
+.twenty-bottom-bottom>li {
+    float: left;
+}
+.twenty-bottom-bottom>li:hover {
+    background: #e2eeff;
+}
+.local {
+    width: 24px;
+    height: 24px;
+    
+    float: left;
+    margin:8px  8px 0 0;
+    background: url(https://pic.c-ctrip.com/index/v3.0/supply_icon.png) no-repeat center / 100% auto;
+}
+
+.locall {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin:8px  0 0;
+    float: left;
+    background: url(https://pages.ctrip.com/tour/pdf1610/1.png) no-repeat center / 100% auto;
+}
+
+.localqi {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    margin:8px  8px 0 0;
+    float: left;
+}
+
+.localqi1 {
+    background: url(https://pic.c-ctrip.com/vacation_v2/visa/24-japan.png) no-repeat center / 100% auto;
+}
+
+.localqi2 {
+    background: url(https://pic.c-ctrip.com/vacation_v2/visa/24-korea.png) no-repeat center / 100% auto;
+}
+
+.localqi3 {
+    background: url(https://pic.c-ctrip.com/vacation_v2/visa/24-USA.png) no-repeat center / 100% auto;
+}
+
+.localqi4 {
+    background: url(https://pic.c-ctrip.com/vacation_v2/visa/24-Australia.png) no-repeat center / 100% auto;
+}
+
+.localfont {
+    float: left;
+}
+
+.end1 {
+    width: 1200px;
+    height: 344px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.end1-top {
+    width: 100%;
+    height: 98px;
+}
+
+.end1-left {
+    width: 220px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.end1-right {
+    width: 977px;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 10px 10px 0 20px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.end1-right-top {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 26px;
+}
+
+.end1-right-bottom {
+    width: 100%;
+    height: 58px;
+    margin: 0;
+}
+
+.end1-right-bottom>li {
+    width: 155px;
+    height: 35px;
+    margin: 10px 0 0;
+    padding: 0 40px;
+    border-left: 1px dashed #a3a3a3;
+    float: left;
+}
+
+.end1-right-bottom-img {
+    width: 76px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.end1-right-bottom-img1 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat 0 0/ 100% auto;
+}
+
+.end1-right-bottom-img2 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat 0 -33px/ 100% auto;
+}
+
+.end1-right-bottom-img3 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat 0 -66px/ 100% auto;
+}
+
+.end1-right-bottom-img4 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat 0 -97px/ 100% auto;
+}
+
+.end1-right-bottom-img5 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat 0 -128px/ 100% auto;
+}
+
+.end1-right-bottom-img6 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat 0 -160px/ 100% auto;
+}
+
+.end1-right-bottom li:nth-child(1) {
+    border-left: none;
+}
+
+.end1-bottom {
+    width: 100%;
+    height: 244px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.end1-bottom-one {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px dotted #a3a3a3;
+}
+
+.end1-bottom-one-left {
+    width: 80px;
+    height: 100%;
+    float: left;
+    line-height: 25px;
+    font-weight: bold;
+    color: #666;
+}
+
+.end1-bottom-one-right {
+    width: 1088px;
+    height: 100%;
+    float: left;
+    margin: 0;
+    color: #b6b6b6;
+}
+
+.end1-bottom-one-right>li {
+    float: left;
+    width: 84px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px 0 0;
+}
+
+.end1-bottom-two {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 0;
+    border-bottom: 1px dotted #a3a3a3;
+}
+
+#end1-bottom-two-last {
+    border: none;
+}
+
+.end1-bottom-two-left {
+    width: 80px;
+    height: 100%;
+    float: left;
+    line-height: 29px;
+    font-weight: bold;
+    color: #666;
+}
+
+.end1-bottom-two-right {
+    width: 1088px;
+    height: 100%;
+    float: left;
+    margin: 0;
+    color: #b6b6b6;
+}
+
+.end1-bottom-two-right>li {
+    float: left;
+    width: 84px;
+    height: 100%;
+    line-height: 29px;
+    margin: 0 5px 0 0;
+}
+
+.end {
+    width: 1200px;
+    height: 250px;
+    padding: 40px 5px;
+    margin: 40px auto 40px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.end-one {
+    width: 245px;
+    height: 150px;
+    float: left;
+    border-right: 1px solid #a3a3a3;
+}
+
+.end-one-s {
+    width: 100%;
+    height: 50px;
+}
+
+.end-one-img {
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 5px 5px 0 5px;
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat -41px -250px;
+}
+
+#end-one-img2 {
+    background: url(https://pic.c-ctrip.com/platform/online/home/pic_partner.png) no-repeat -41px -200px;
+}
+
+.end-one-font {
+    width: 190px;
+    height: 39px;
+    float: left;
+}
+
+.end-two {
+    width: 261px;
+    height: 150px;
+    float: left;
+    padding: 0 10px 0 40px;
+    box-sizing: border-box;
+    border-right: 1px solid #a3a3a3;
+}
+
+.end-two>li {
+    width: 105px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    float: left;
+    margin: 6px 0;
+}
+
+.end-two li:nth-child(1) {
+    width: 210px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.endlat {
+    width: 161px;
+    height: 100%;
+    float: left;
+}
+
+.endlastimg {
+    width: 132px;
+    height: 155px;
+    margin: 5px 0 0 15px;
+    background: url(../image/weixing.png) no-repeat center / auto 100%;
+}
+
+.p3 {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #999999;
+}
+
+.p3img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    background: url(https://pic.c-ctrip.com/platform/online/home/phone_list20190617.png) no-repeat 0 -235px;
+}

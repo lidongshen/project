@@ -1,0 +1,26 @@
+.zong{
+	width:100px;
+	height:120px;
+	margin:auto;
+	color:gray;
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+}
+.load{
+	font-size: 90px;
+	text-align:center;
+	line-height:100px;
+	width:100px;
+	height:100px;
+}
+.loadfont{
+	width:100px;
+	height:20px;
+	font-weight:bolder;
+	font-size:18px;
+	text-align:center;
+	line-height:20px;
+}

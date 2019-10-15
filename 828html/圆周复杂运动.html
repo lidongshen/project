@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background:tomato;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+    
+        window.onload=function(){
+            var div = document.querySelector("div")
+
+            var originx=200,originy=200,x=100,y=100,anglex=0,speedx=5,angley=20,speedy=10
+
+            function move(){
+                anglex+=speedx
+                angley+=speedy
+                var x1=originx+x*Math.cos(anglex*Math.PI/180)-y*Math.sin(anglex*Math.PI/180)
+                var y1=originy+x*Math.sin(angley*Math.PI/180)+y*Math.cos(angley*Math.PI/180)
+                div.style.left=x1+"px"
+                div.style.top=y1+"px"
+                var div1 = document.createElement("div")
+                div1.style.cssText="width:10px;height:10px;postion:absolute;left:"+x1+"px;top:"+y1+"px;"
+                document.body.appendChild(div1)
+
+                requestAnimationFrame(move)
+            }
+            move()
+
+        }
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
